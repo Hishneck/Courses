@@ -1,16 +1,16 @@
-import coursesItem from './coursesItem';
+import CoursesItem from './CoursesItem';
 import { Grid } from '@mui/material';
 
-const coursesList = (props) => {
+const CoursesList = (props) => {
     const {courses} = props;
 
     return (
         <Grid container spacing={2}>
             {courses.map((item) => (
-                <coursesItem key={item.id} {...item} />
+                <CoursesItem key={item.id} {...item} />
             ))}
         </Grid>
     );
 };
 
-export default coursesList;
+export default CoursesList;

@@ -14,7 +14,7 @@ export const coursesApi = createApi({
                 ]
                 :[{type:'Products', id: 'LIST'}],
         }),
-        addProuct: build.mutation({
+        addProduct: build.mutation({
             query: (body) => ({
                 url:'courses',
                 method: 'POST',
@@ -41,4 +41,4 @@ export const coursesApi = createApi({
     })
 })
 
-export const {useGetCoursesQuery, useAddProuctMutation, useDeleteProductMutation, useGetModulesQuery} = coursesApi
+export const {useGetCoursesQuery, useAddProductMutation, useDeleteProductMutation, useGetModulesQuery} = coursesApi
