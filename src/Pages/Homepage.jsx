@@ -16,7 +16,7 @@ const Homepage = ()=>{
     >
       <Grid size ={10} container spacing={2} display={"flex"} justifyContent={"center"}>
         {data.map(item =>(
-          <Link to='/modules' style={{textDecoration: 'none'}}>
+          <Link to={`/modules/${item.id}`} style={{textDecoration: 'none'}}>
             <Card key={item.id} sx={{height: 450, width: 250, padding: 2,
               '&:hover': {
                 backgroundColor: '#f5f5f5', // Изменение фона

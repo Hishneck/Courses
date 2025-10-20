@@ -15,7 +15,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Homepage/>}/>
         <Route path='/createform' element={<FormCourses/>}/>
-        <Route path='/modules' element={<ModulePage/>}/>
+        <Route path='/modules/:courseId' element={<ModulePage/>}/>
         <Route path='*'element={<Homepage/>}/>
       </Routes>
     </Container>
