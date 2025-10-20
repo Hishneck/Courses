@@ -1,7 +1,7 @@
-import { Grid } from "@mui/material";
+import { Grid, Card, CardMedia, CardContent, Typography } from "@mui/material";
 
 
-const coursesItem = (props) => {
+const CoursesItem = (props) => {
     const { title, description, imageUrl, category} = props;
 
     return (
@@ -28,4 +28,4 @@ const coursesItem = (props) => {
     )
 }
 
-export default coursesItem;
+export default CoursesItem;

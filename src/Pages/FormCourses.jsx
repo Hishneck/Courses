@@ -1,13 +1,13 @@
 import { Box, Card, CardContent, Container, Input, TextField } from "@mui/material"
 import { Form, useForm } from "react-hook-form"
-import { useAddProuctMutation } from "../redux"
+import { useAddProductMutation } from "../redux"
 import { useState } from "react"
 
 const FormCourses = ()=> {
     const [newTitle, setTitle]= useState('')
     const [newDesc, setDesc]= useState('')
     const [newCath, setCath]= useState('')
-    const [addProduct, {isError}]=useAddProuctMutation()
+    const [addProduct, {isError}]=useAddProductMutation()
     const handleAddProduct = async()=>{
     if(newTitle, newDesc, newCath)
       await addProduct({title: newTitle, description: newDesc,imageUrl: 'https://picsum.photos/300/202', category: newCath}).unwrap();
