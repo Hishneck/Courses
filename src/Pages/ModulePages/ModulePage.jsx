@@ -51,9 +51,7 @@ const ModulePage = () => {
           </Card>
         ))}
       </Grid>
-      <Button>
-        <Link to="/">Назад</Link>
-      </Button>
+      <Link to="/" className="back_link">Назад</Link>
       {/* Сообщения о состоянии */}
       {isLoading && <CircularProgress />}
       {!isLoading && filteredModules.length === 0 && (

@@ -52,3 +52,27 @@ body {
     margin: 0;
     padding: 0;
 }
+/* ===================== */
+.header_link {
+    text-decoration: "none";
+    color: white;
+    margin: 10px 
+}
+.header_link:hover{
+    color: rgb(219, 163, 74);
+    text-decoration: underline;
+}
+
+/* ======== */
+
+.back_link{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.back_link:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}

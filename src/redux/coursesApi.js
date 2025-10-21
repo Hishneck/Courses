@@ -40,6 +40,14 @@ export const coursesApi = createApi({
             ]
           : [{ type: "Products", id: "LIST" }],
     }),
+    addModules:  build.mutation({
+      query: (body) => ({
+        url: "modules",
+        method: "POST",
+        body,
+      }),
+      invalidatesTags: [{ type: "Products", id: "LIST" }],
+    }),
   }),
 });
 
@@ -48,4 +56,5 @@ export const {
   useAddProductMutation,
   useDeleteProductMutation,
   useGetModulesQuery,
+  useAddModulesMutation,
 } = coursesApi;

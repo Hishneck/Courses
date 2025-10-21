@@ -45,10 +45,10 @@ const Homepage = () => {
               }}
             >
               <CardContent sx={{ textAlign: "center" }}>
-                <Typography variant="h5" height={100}>
+                <Typography variant="h5" height={100} >
                   {item.title}
                 </Typography>
-                <Typography variant="body1" height={100}>
+                <Typography variant="body1" height={100} overflow={"hidden"} textOverflow={'ellipsis'}>
                   {item.description}
                 </Typography>
               </CardContent>

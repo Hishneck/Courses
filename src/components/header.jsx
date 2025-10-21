@@ -11,7 +11,7 @@ function Header() {
         <Typography variant="body1">
           <Link
             to="/"
-            style={{ textDecoration: "none", color: "white", margin: 20 }}
+            className="header_link"
           >
             Курсы
           </Link>
@@ -19,9 +19,17 @@ function Header() {
         <Typography variant="body1">
           <Link
             to="/createform"
-            style={{ textDecoration: "none", color: "white" }}
+            className="header_link"
           >
             Создать новый курс
+          </Link>
+        </Typography>
+        <Typography variant="body1">
+          <Link
+            to="/createform_module"
+            className="header_link"
+          >
+            Создать новый модуль
           </Link>
         </Typography>
       </Toolbar>
